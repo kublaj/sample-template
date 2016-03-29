@@ -17,11 +17,11 @@
 
       <!-- Now, rather than hard-coding the content of this <h1>, we
            can use <simpla-text> inside it to provide editable content. -->
-      <h1 class="splash__title"><simpla-text sid="spash-title"></simpla-text></h1>
+      <h1 class="splash__title"><simpla-text sid="splash-title"></simpla-text></h1>
 
       <!-- Every Simpla element needs a unique ID, which we provide in
            an sid (Simpla ID) attribute on the element.   -->
-      <h2 class="splash__subtitle"><simpla-text sid="spash-subtitle"></simpla-text></h2>
+      <h2 class="splash__subtitle"><simpla-text sid="splash-subtitle"></simpla-text></h2>
 
     </section>
 
@@ -46,24 +46,19 @@
 
       </simpla-block>
 
-      <!-- An upcoming repeater feature will make this kind of
-           repetative content much more concise and flexible -->
       <simpla-block sid="feature-2" class="feature">
 
-        <!-- We can use the same sid's here as before, since they
+        <!-- We can use the same SIDs here as before, since they
              are scoped to this <simpla-block>  -->
         <simpla-img sid="image" class="feature__img"></simpla-img>
 
-        <!-- And we can use fairly generic sid's, because this data
-             can be accessed in dot notation through its block heirachy.
-             For example: [page].feature-2.copy -->
         <simpla-text sid="copy" class="feature__copy" inline></simpla-text>
 
       </simpla-block>
 
       <!-- Since the content inside a <simpla-block> is determined by
-           its sid, you can change whole sections or pages of content
-           by just wrapping it in a <simpla-block> and changing the sid -->
+           its SID, you can change whole sections or pages of content
+           by just wrapping it in a <simpla-block> and changing the SID -->
       <simpla-block sid="feature-3" class="feature">
 
         <simpla-img sid="image" class="feature__img"></simpla-img>
