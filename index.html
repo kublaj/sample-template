@@ -5,18 +5,21 @@
     <link rel="stylesheet" href="./styles.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-    <!-- This is how we 'install' Simpla, just link in a script tag
-         pointing to https://app.simpla.io, then put the API key of
-         your project in the simpla-api attribute  -->
-    <script src="https://app.simpla.io" simpla-api="YOUR-KEY-HERE"></script>
+    <!-- Link in the Simpla library from app.simpla.io  -->
+    <script src="https://app.simpla.io"></script>
+
+    <!-- Then boot your project (insert your API key below) -->
+    <script>
+      Simpla('YOUR-KEY-HERE');
+    </script>
 
   </head>
   <body>
 
     <section class="splash">
 
-      <!-- Now, rather than hard-coding the content of this <h1>, we
-           can use <simpla-text> inside it to provide editable content. -->
+      <!-- Rather than hard-coding the content of this <h1>, we can
+           use <simpla-text> inside it to provide editable content. -->
       <h1 class="splash__title"><simpla-text sid="splash-title"></simpla-text></h1>
 
       <!-- Every Simpla element needs a unique ID, which we provide in
@@ -68,13 +71,13 @@
       </simpla-block>
 
     </section>
-    
-    <!-- Next steps: 
+
+    <!-- Next steps:
           - Open this file in your browser
           - Add #edit to the end of the URL
           - Login and start editing content -->
-          
-    <!-- Want to learn more about editing with this template? Head 
+
+    <!-- Want to learn more about editing with this template? Head
          to https://sample.simpla.io and take the interactive tour! -->
 
   </body>
