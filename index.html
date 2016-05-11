@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sample Template</title>
+    <title>Starter Kit</title>
     <link rel="stylesheet" href="./styles.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-    <!-- Link in the Simpla library from app.simpla.io  -->
+    <!-- This snippet is used to setup Simpla on your site -->
     <script src="https://app.simpla.io"></script>
-
-    <!-- Then boot your project (insert your API key below) -->
     <script>
-      Simpla('YOUR-KEY-HERE');
+      // Replace 'PROJECT-KEY' with your API key
+      // You can get your project's API key from https://simpla.io
+      Simpla('PROJECT-KEY');
     </script>
 
   </head>
@@ -36,15 +36,12 @@
       <simpla-block sid="feature-1" class="feature">
 
         <!-- <simpla-img> behaves similarly to an <img/>, except it
-             requires both opening and closing tags, as all Simpla
-             elements do -->
+             requires both opening and closing tags -->
         <simpla-img sid="image" class="feature__img"></simpla-img>
 
-        <!-- When <simpla-text> is on its own like this it operates
-             as a block element, creating <p>s inside itself, whereas
-             when its inside another textual element (like headings) it
-             only allows line-breaks. You can force a particular mode
-             with the 'inline' and 'block' attributes. -->
+        <!-- When <simpla-text> is on its own it acts like a container,
+             creating <p>s inside itself. When it's inside another textual
+             element (eg: headings) it only allows line-breaks. -->
         <simpla-text sid="copy" class="feature__copy" inline></simpla-text>
 
       </simpla-block>
@@ -77,8 +74,7 @@
           - Add #edit to the end of the URL
           - Login and start editing content -->
 
-    <!-- Want to learn more about editing with this template? Head
-         to https://sample.simpla.io and take the interactive tour! -->
+    <!-- Want to learn more? Head to https://simpla.io/docs -->
 
   </body>
 </html>
