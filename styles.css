@@ -73,6 +73,11 @@ p a {
   text-align: center;
 }
 
+.splash__title a,
+.splash__subtitle a {
+  border-bottom: 2px solid;
+}
+
 .splash__title {
   font-size: 5rem;
 }
